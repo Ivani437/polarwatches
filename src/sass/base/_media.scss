@@ -12,6 +12,11 @@
 			width: 850px;}		
 		}
 	}
+	.consultation{
+		.container{
+			width: 850px;
+		}
+	}
 
 
 @media (max-width: 991px){
@@ -55,6 +60,23 @@
 	.promo{
 		height: 520px;
 		
+	}
+	.consultation{
+		height: 500px;
+		.container{
+			width: 650px;
+		}
+		.title_left{
+			font-size: 26px;
+			margin-top: -50px;
+		}
+		.consultation__descr{
+			font-size: 16px;
+			line-height: 20px;
+		}
+		.feed-form{
+			margin-top: 23px;
+		}
 	}
 @media (max-width: 767px){
 	.promo{
@@ -147,7 +169,8 @@
 			a {
 				font-size: 10px;
 			}
-		}	
+		}
+	
 	}
 }
 }
@@ -243,5 +266,65 @@
 				font-size: 10px;
 			}
 		}	
+	}
+	
+}
+@media (max-width: 767px){
+	.consultation{
+		height: 370px;
+		.container{
+			width: 500px;
+		}
+		.title_left{
+			font-size: 20px;
+			margin-top: -70px;
+		}
+		.consultation__descr{
+			font-size: 14px;
+			line-height: 20px;
+		}
+		.feed-form{
+			margin-top: 20px;
+			input{
+				height: 35px;
+				border-radius: 5px;
+				background-color: #fff;
+				margin-bottom: 7px;
+				border:none;
+				padding: 0 20px;
+				font-weight: 300;
+				font-size: 14px;
+				color: #4B4B4B;
+				&:nth-child(3){
+					margin-bottom: 10px;
+				}
+			}	
+		}
+		.button_submit{
+			width: 100%;
+			height: 40px;
+			color: #ffffff;
+			font-size: 14px;
+		}
+	}		
+}
+@media (max-width: 575px){
+	.consultation{
+		height: 390px;
+		.container{
+			width: 280px;
+		}
+		.title_left{
+			font-size: 18px;
+			margin-top: -70px;
+		}
+		.consultation__descr{
+			font-size: 13px;
+			line-height: 20px;
+		}
+		.feed-form{
+			margin-top: 23px;
+			width: 270px;
+		}
 	}
 }
