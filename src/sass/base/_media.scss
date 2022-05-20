@@ -318,7 +318,7 @@
 					margin-bottom: 30px;
 					img{
 						width: 140px;
-            			height: 140px;
+						height: 140px;
 					}
 					.review_people-descr{
 						h2{
@@ -343,6 +343,33 @@
 
 
 	}	
+	.footer{
+		height: 430px;
+		iframe{
+			height: 430px;
+
+		}
+		.footer__info{
+			width: 300px;
+			height: 150px;
+			padding: 25px 34px 30px 34px;
+			.footer__addr{
+				font-size: 13px;
+				margin-bottom: 16px;
+			}
+			.footer__phone{
+				font-size: 13px;
+				margin-bottom: 16px;
+			}
+			.footer__social{
+				.footer__social-item{
+					img{
+						height: 36px;
+					}
+				}
+			}
+		}
+	}
 
 
 }
@@ -431,7 +458,7 @@
 					margin-bottom: 30px;
 					img{
 						width: 140px;
-            			height: 140px;
+						height: 140px;
 					}
 					.review_people-descr{
 						padding-left:31px ;
@@ -456,6 +483,33 @@
 		}
 
 
+	}
+	.footer{
+		height: 400px;
+		iframe{
+			height: 400px;
+
+		}
+		.footer__info{
+			width: 300px;
+			height: 150px;
+			padding: 25px 34px 30px 34px;
+			.footer__addr{
+				font-size: 13px;
+				margin-bottom: 16px;
+			}
+			.footer__phone{
+				font-size: 13px;
+				margin-bottom: 16px;
+			}
+			.footer__social{
+				.footer__social-item{
+					img{
+						height: 36px;
+					}
+				}
+			}
+		}
 	}	
 
 }
@@ -526,7 +580,7 @@
 					flex-direction: column;
 					img{
 						width: 100px;
-            			height: 100px;
+						height: 100px;
 						margin: 0 auto;
 				
 						
@@ -554,6 +608,66 @@
 					}
 
 				}
+			}
+		}
+	}
+	.footer{
+		height: 430px;
+		iframe{
+			height: 430px;
+
+		}
+		.footer__info{
+			width: 240px;
+			height: 170px;
+			padding: 25px 34px 30px 34px;
+			.footer__addr{
+				font-size: 13px;
+				margin-bottom: 16px;
+			}
+			.footer__phone{
+				font-size: 13px;
+				margin-bottom: 16px;
+			}
+			.footer__social{
+				.footer__social-item{
+					img{
+						height: 36px;
+					}
+				}
+			}
+		}
+	}
+	.overlay{
+		.modal{
+			width: 260px;
+			height: 280px;
+			padding: 18px 10px 20px 10px;
+			.modal__close{ 
+				line-height:7px;
+				font-size: 28px;
+				right: -20px;
+			}
+			.modal__subtitle{
+				font-size: 14px;
+			}
+			.modal__descr{
+				font-size: 11px;
+			}
+			.feed-form_mt25{
+				margin-top: 15px;
+				input{
+					height: 30px;
+					width: 240px;
+					padding: 10px 10px;
+				}
+				button{
+					margin-left: 24px;
+					width: 190px;
+					height: 35px;
+					color: #ffffff;
+					font-size: 11px;
+				}	
 			}
 		}
 	}	
