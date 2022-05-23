@@ -45,4 +45,10 @@
             font-size: 14px;
             }
         }
+        .second_item-animated{
+            animation: heartbeat 1.5s ease infinite;
+            &:hover{
+                animation-play-state: paused;
+            }
+        }
     }

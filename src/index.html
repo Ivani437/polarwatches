@@ -8,10 +8,14 @@
 	<link rel="stylesheet" href="css/bootstrap-reboot.min.css">
 	<link rel="stylesheet" href="css/font.css">
 	<link rel="stylesheet" href="css/slick.css">
+	<link rel="stylesheet" href="css/animate.min.css">
 	<link rel="stylesheet" href="css/style.min.css">
+	<link
+	rel="stylesheet"
+	href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
 </head>
 <body>
-	<section class="promo">
+	<section id="up" class="promo">
 		<div class="container">
 			<header class="header">
 				<a href="#" class="header__logo">
@@ -60,18 +64,18 @@
 				<div class="second__icons">
 					<div class="second_icon">
 						<img src="icons/cup.png" alt="cup">
-						Делимся опытом
+						Делимся опытом <br>
 						<span>Наши сотрудники всегда готовы поделиться своим опытом, так как сами бегают полумарафоны, переплыли Босфор, готовятся к соревнованиям по триатлону!</span>
 					</div>
 					<div class="second_icon">
-						<img src="icons/heart.png" alt="heart">
-						Заботимся о здоровье
+						<img src="icons/heart.png" alt="heart" class="second_item-animated">
+						Заботимся о здоровье<br>
 						<span>Мы работаем для того, чтобы Ваши занятия спортом шли на пользу Вашему здоровью и были в радость Вам и Вашим близким!
 						</span>
 					</div>
 					<div class="second_icon">
 						<img src="icons/shoe.png" alt="shoe">
-						Учим бегать
+						Учим бегать<br>
 						<span>Помогаем с обучением правильной технике бега! Дружим с крупнейшей школой бега в России - <a href="#">I LOVE RUNNING.</a> </span> 
 					</div>
 				</div>
@@ -379,18 +383,18 @@
 			<div class="review__wrapper">
 				<h2 class="title">отзывы клиентов</h2>
 				<div class="review__peoples">
-					<div class="review_people">
+					<div class="review_people animate__animated animate__fadeInUp wow">
 						<img src="img/photo_1.png" alt="review">
-						<div class="review_people-descr">
+						<div class="review_people-descr ">
 							<h2>Ирина Иванченко </h2>
 							 <h3> 2 полумарафона</h3>
 							<span>
 							Не знала, что себе купить - обратилась к ребятам из RunSmart - подобрали пульсометр, который подошёл именно под мои цели и финансовые возможности.Через некоторое время решила обновить гаджет - не раздумывая обратилась туда же. <br> <br> Новые цели - новый гаджет! <br><br>
 							Спасибо, RunSmart! 
 							</span>
+						</div>
 					</div>
-					</div>
-					<div class="review_people">
+					<div class="review_people animate__animated animate__fadeInUp wow">
 						<img src="img/photo_2.png" alt="review">
 						<div class="review_people-descr">
 							<h2>Иван Сёмочкин</h2>
@@ -400,7 +404,7 @@
 							</span>
 						</div>
 					</div>
-					<div class="review_people">
+					<div class="review_people animate__animated animate__fadeInUp wow">
 						<img src="img/photo_3.png" alt="review">
 						<div class="review_people-descr">
 							<h2>Юлия Дашкина</h2>
@@ -458,6 +462,12 @@
 			</div>
 		</div>
 	</div>
+
+	<a href="#up" class="pageup"> 
+		<img src="icons/circle-chevron-up-solid.svg" alt="up">
+	</a>
+	
+
 	<script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js">
 	</script>
 	<script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js">
@@ -465,6 +475,7 @@
 	<script src="js/slick.min.js" ></script>
 	<script src="js/jquery.validate.min.js"></script>
 	<script src="js/jquery.maskedinput.min.js" ></script>
+	<script src="js/wow.min.js" ></script>
 	<script src="js/script.js" ></script>
 </body>
 </html>

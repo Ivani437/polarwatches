@@ -2,8 +2,8 @@ $(document).ready(function(){
     $('.carousel__inner').slick({
         speed: 1200,
         // adaptiveHeight: true,
-       prevArrow: '<button type="button" class="slick-prev"><img src="../icons/chevron left solid.png" ></button>',
-       nextArrow: '<button type="button" class="slick-next"><img src="../icons/chevron right solid.png" ></button>',
+       prevArrow: '<button type="button" class="slick-prev"><img src="icons/chevron left solid.png" ></button>',
+       nextArrow: '<button type="button" class="slick-next"><img src="icons/chevron right solid.png" ></button>',
        responsive: [
            {
             breakpoint: 767,
@@ -86,5 +86,42 @@ $(document).ready(function(){
     valideForms('#order form');
 
     $('input[name="phone"]').mask("+7 (999) 999-99-99");
+
+    $('form').submit(function(e){
+        e.preventDefault();
+
+        if(!$(this).valid()){
+            return;
+        }
+
+        $.ajax({
+            type: "POST",
+            url: "mailer?smart.php",
+            data: $(this).serialize()
+        }).done(function(){
+            $(this).find("input").val("");
+            $('#consultation, #order').fadeOut();
+            $('.overlay, #thanks').fadeIn('slow');
+
+            $('form').trigger('reset');
+        });
+        return false;
+    });
     
+    // smooth scroll and page up
+
+    $(window).scroll(function(){
+        if($(this).scrollTop() > 1000) {
+            $('.pageup').fadeIn();
+
+        }
+        else {
+            $('.pageup').fadeOut();
+        }
+    });
+
+    new WOW().init();
+
+ 
+
 });
